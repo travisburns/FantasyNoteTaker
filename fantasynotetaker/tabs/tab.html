@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="top-info" style="background-color: rgb(95, 95, 95); color: aliceblue;">
+         <h1>Fiction Note Taker App</h1>
+         <p style="font-style: italic;">“You have to write the book that wants to be written. And if the book will be too difficult for grown-ups, then you write it for children.” 
+            ― Madeleine L’Engle
+         </p>
+      </div>
+
+      <div class="content-flex">
+         <div class="tabs__sidebar">
+            <button class="tabs__button" data-for-tab="1" >Character's</button>
+            <button class="tabs__button" data-for-tab="2" >Location's</button>
+            <button class="tabs__button" data-for-tab="3" >Item's</button>
+         </div>
+
+         <div class="tabs">
+            <div class="tabs__content"
+               data-tab="1">
+               <div class="columns" style="display: flex;">
+                  <div class="left-info">
+                     <img src ="img/newchar.png" alt="newcharacterimage">
+                     <div class="btn-space">
+                        <button onClick="newInfo()" type="submit" id="submitBtn" name="submit">Add Character</button>
+                     </div>
+                     <p>Enter New Character Details</p>
+                  </div>
+                  <div class="form-column">
+                     <form id="myform">
+                        <h2>New Character</h2>
+                        <div class="image-upload">
+                           <label for="img">Select image:</label>
+                           <input id="fileInput" type="file" accept="image/*">
+                        </div>
+                        <div class="flex-div">
+                           <div class="firstrow">
+                              <div class="name-upload">     
+                                 <label for="name">Name</label>
+                                 <input size="30" placeholder="Name" name="Name" id="name" type="text" value="Nazmus">
+                              </div>
+                              <div class="title-upload">
+                                 <label for="title">title</label>
+                                 <input size="20" placeholder="Title" name="title" id="title" type="text" value="Boston">
+                              </div>
+                              <div class="summary-upload">
+                                 <label for="birthplace">Birthplace</label>
+                                 <input placeholder="birthplace" name="birthplace" id="birthplace" type="text" value="birthplace">
+                              </div>
+                           </div>
+                           <div class="secondrow">
+                              <div class="height-upload">
+                                 <label for="height">Height</label>
+                                 <input size="10" placeholder="Height" name="height" id="height" type="text" value="MA">
+                              </div>
+                              <div class="weight-upload">
+                                 <label for="weight">Weight</label>
+                                 <input placeholder="weight" name="weight" id="weight" type="text" value="180lbs">
+                              </div>
+                              <div class="title-upload">
+                                 <label for="build">Build</label>
+                                 <input placeholder="build" name="build" id="build" type="text" value="build">
+                              </div>
+                           </div>
+                           <div class="thirdrow">
+                              <div class="star-upload">
+                                 <label for="starsign">Star</label>
+                                 <input placeholder="starsign" name="starsign" id="starsign" type="text" value="Sagg">
+                              </div>
+                           </div>
+                           <div class="description-upload">
+                              <label style="margin-bottom:20px;" for ="description">Description</label>
+                              <textarea placeholder="description" name="description" id="description"></textarea>
+                           </div>
+                           <div class="history-upload">
+                              <label style="margin-bottom:20px;" for ="history">History</label>
+                              <textarea placeholder="history" name="history" id="history"></textarea>
+                           </div>
+                           <div class="accomplishments-upload">
+                              <label style="margin-bottom:20px;" for ="accomplishments">accomplishments</label>
+                              <textarea placeholder="accomplishments" name="accomplishments" id="accomplishments"></textarea>
+                           </div>
+                           <div class="failures-upload">
+                              <label style="margin-bottom:20px;" for ="failures">failures</label>
+                              <textarea placeholder="failures" name="failures" id="failures"></textarea>
+                           </div>
+                           <div class="truama's-upload">
+                              <label style="margin-bottom:20px;" for ="trauma">History</label>
+                              <textarea placeholder="trauma" name="trauma" id="trauma"></textarea>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="section-title" style="height: 700px;  overflow-y: scroll;">
+                     <div id="charsections">
+                        <div class="char-info" style="display: flex; background-color: rgb(0, 0, 0);">
+                           <h3>Characters</h3>
+                           <input type="search" name="character-search" id="character-search" placeholder="Search...">
+                           <button class="alphabet"></button>
+                           <button class="alphabet"></button>
+                           <button class="alphabet"></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div class="tabs__content" data-tab="2">
+            <h2>Item</h2>
+            <!--<button onClick="newInfo2()" type="submit" id="submitBtn" name="submit">Add Character</button> -->
+            <div class="columns" style="display: flex;">
+               <div class="form-column">
+                  <form id="myform2" style="display:flex">
+                     <div class="left-col">
+                        <label for="img">Select image:</label>
+                        <input type="file" id="img" name="img" accept="image/*">
+                        <label for="name">Name</label>
+                        <input size="30" placeholder="Name" name="name" id="itemname" type="text" value="Dagger Of truth"> <br /><br />
+                        <label for="title">type</label>
+                        <input size="20" placeholder="Type" name="type" id="type" type="text" value="Dagger"><br /><br />
+                        <label for="Summary">Summary</label>
+                        <input placeholder="Summary" name="summary" id="Summary" type="text" value="Summary"><br /><br />
+                        <textarea placeholder="Description" name="description" id="itemdescription"></textarea>
+                     </div>
+                     <div class="right-col">
+                        <label for="itemweight">Weight</label>
+                        <input size="10" placeholder="itemweight" name="itemweight" id="itemweight" type="text" value="weight"><br /><br />
+                        <label for="material">material</label>
+                        <input placeholder="material" name="material" id="material" type="text" value="Iron"><br /><br />
+                        <label for="title">title</label>
+                        <input placeholder="Damage" name="damage" id="damage" type="text" value="24"><br /><br />
+                     </div>
+                  </form>
+                  <div class="section-title" style= "height: 800px; overflow-y: scroll;">
+                     <h3>Characters</h3>
+                     <div id="itemsections">
+                     </div>
+                  </div>
+               </div>
+               <!--  <button onClick="newInfo2()" type="submit" id="submitBtn" name="submit">Add Character</button> -->
+            </div>
+
+
+
+            <div class="tabs__content" data-tab="3">
+               <h2>Tab #3</h2>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                  Ducimus suscipit, voluptatem tempora assumenda ipsa dolorum 
+                  modi doloremque nulla quae non aliquam repudiandae porro et 
+                  ut odio hic alias delectus omnis.
+               </p>
+               <p>
+                  Lorem ipsum dolor, sit atask3sectetur adipisicing elit. 
+                  Quae veniam iste reprehenderit est enim reiciendis necessitatibus 
+                  quam dignissimos, architecto dolores commodi harum amet rerum optio, 
+                  quis sit quasi blanditiis sapiente!
+               </p>
+            </div>
+         </div>
+      </div>
+
+
+
+      <div class="footer" style="background-color: rgb(95, 95, 95); color: aliceblue;">
+         <h1>Fiction Note Taker App</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, veniam eius magni deleniti consequatur odit voluptatibus molestiae modi quidem nam!</p>
+      </div>
+
+
+
+      <script></script>
+      <script src="index.js"></script>
+   </body>
+</html>

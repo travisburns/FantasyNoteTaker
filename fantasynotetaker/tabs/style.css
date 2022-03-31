@@ -1,0 +1,366 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgb(241, 247, 252);
+    background-repeat: no-repeat;
+  }
+
+  p {
+      font-family: sans-serif;
+  }
+
+.content-flex {
+    display: flex;
+}
+
+.tabs {
+    border: 1px solid #cccccc;
+    display: flex;
+}
+
+
+.tabs__sidebar {
+    
+    flex-shrink: 0;
+    background: #cccccc;
+    
+}
+
+
+#myform {
+   background: linear-gradient(45deg, #23a2f7 0%, #01b991 100%);
+    
+    
+    
+    
+    
+   
+    color: white;
+    box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
+    white-space: nowrap; overflow-y: scroll;
+    max-height: 700px;
+    height: 700px;
+    font-family: 'poppins';
+    font-weight: bolder;
+    font-weight: bold;
+}
+
+
+#myform input {
+    font-family: 'poppins';
+    font-weight: bold;
+    color: #ffffff;
+    font-style: italic;
+
+} 
+
+#myform input:hover {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+
+.left-info {
+    
+    background: rgba(20, 20, 20, .8);
+    text-align: center;
+    border-right: 5px solid rgba(30, 30, 30, .8);
+    width: 120px;
+}
+    
+   
+.left-info p {
+    color: rgb(180, 237, 245);
+    font-family: 'poppins';
+    
+}
+
+input {
+    margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid rgba(10, 180, 180, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, .2);
+  color: white;
+  outline: none;
+}
+
+
+input:hover {
+    transition: .3s;;
+    background-color: #ffffff;
+    color: black;
+}
+
+.tabs__button {
+    display: block;
+    padding: 10px;
+    background: #eeeeee;
+    border: none;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    font-family: 'poppins';
+    font-weight: bolder;
+}
+
+
+
+.tabs__button:active {
+    background: #dddddd;
+    
+}
+
+
+
+
+
+
+
+
+.tabs__button:not(:last-of-type) {
+    border-bottom: 1px solid #cccccc;
+}
+
+
+.tabs__button--active {
+    font-weight: bold;
+    border-right: 2px solid #009879;
+    background: #8a8a8a;
+    color: white;
+}
+
+
+.tabs__content {
+    padding: 15px;
+    font-size: 0.8rem;
+    display: none;
+    
+}
+
+.tabs__button:hover {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #08a375;
+    transition: .4s;
+    position: relative;
+    font-family: 'poppins';
+}
+
+
+
+
+.tabs__button--active:hover {
+    color: #3f4443;
+}
+
+.tabs__content--active {
+    display: block;
+}
+
+.tabs__content > :first-child {
+ margin-top: 0;
+}
+
+.section-title {
+    display: flex;
+    background-color: rgba(20, 20, 20, 0.6);
+    max-height: 800px;
+    width: 900px;
+    
+}
+
+div #sections {
+    margin-bottom: 15px;
+}
+
+div .my-class {
+    
+    width: 775px;
+   
+    margin-bottom: 15px;
+       
+
+    border: 1px solid rgba(10, 180, 180, 1);
+        background: rgba(20, 20, 20, .6);
+        font-size: 13px;
+        color: white;
+        margin-top: 20px;
+        padding: 20px 50px;
+        margin: 15px;
+        
+}
+
+.my-class:hover {
+    color: #3f4443;
+    background-color: aqua;
+    transition: .3s;
+}
+
+.my-class:after {
+    transition: .3s;
+}
+
+div .my-class p {
+   
+width: 100%;
+   
+}
+
+
+.my-class p:hover {
+    transition: 3s;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+
+div .my-class :nth-child(1) {
+    
+    
+   
+}
+
+
+div .my-class :nth-child(2) {
+    
+   
+}
+
+div .my-class :nth-child(5) {
+   
+}
+
+div .my-class :nth-child(6) {
+    
+ }
+
+
+ div .my-class :nth-child(9) {
+    
+    
+}
+
+div .my-class :nth-child(10) {
+    
+}
+
+div .my-class :nth-child(11) {
+    
+}
+
+div .my-class :nth-child(12) {
+   
+}
+
+div .my-class :nth-child(13) {
+   
+}
+
+
+
+div .my-class :nth-child(n+9) {
+    
+    
+}
+
+
+.fontweight {
+    font-weight: bold;
+}
+
+#submitBtn {
+    
+        border: 1px solid rgba(10, 180, 180, 1);
+        background: rgba(20, 20, 20, .6);
+        font-size: 10px;
+        color: white;
+        margin-top: 20px;
+        padding: 1px 1px;
+        cursor: pointer;
+        transition: .4s;
+        position: relative;
+
+}
+        #submitBtn:hover {
+          background: rgba(255, 255, 255, 0.8);
+          padding: 5px;
+          color: black;
+    
+      }
+
+
+
+     .name-upload, .title-upload, .summary-upload, .description-upload {
+         display: inline-grid;
+     }
+    
+     .height-upload, .weight-upload, .title-upload, .star-upload {
+        display: inline-grid;
+        
+     }
+
+     .history-upload {
+         display: grid;
+     }
+
+     #character-search {
+         height: 2px;
+     }
+
+     .alphabet {
+         width: 20px;
+         height: 20px;
+         padding: 10px;
+     }
+
+     .char-info {
+    
+     }
+
+     .footer {
+         background-color: gray;
+         margin: 0;
+         padding: 0;
+
+     }
+
+     .wrapper {
+         font-weight: bold;
+         color: #009879;
+     }
+
+     .desc-class {
+        
+        
+        display: block;
+     }
+
+     .desc-class p {
+        
+
+         font-size: 8px;
+        
+        
+     }
+
+    .info-items {
+        display: flex;
+    }
+
+    .info-items #text {
+        display: none;
+    }
+
+    .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 12px 16px 12px 16px;
+      }
